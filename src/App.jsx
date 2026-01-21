@@ -1,8 +1,8 @@
 import Mobile from "./pages/Mobile";
 import Principal from "./pages/Principal";
 import { Routes, Route } from "react-router-dom";
-import './App.css'
-import './index.css'
+import '../styles/App.css'
+import '../styles/index.css'
 
 function App() {
 
