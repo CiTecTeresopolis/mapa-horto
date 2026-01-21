@@ -1,5 +1,5 @@
 @media (orientation: portrait) {
-  .card {
+  /* .card { 
     width: 100vh;
     height: 100vw;
     position: fixed;
@@ -9,5 +9,5 @@
     transform-origin: center;
     background: #fff;
     z-index: 9999;
-  }
+  } */
 }

@@ -13,13 +13,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  font-family: "Press Start 2P", cursive;
+  /* box-sizing: border-box; */
+}
 
 body {
   margin: 0;
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  background-color:darkgreen;
+  background-color: darkgreen;
 }
-
-
