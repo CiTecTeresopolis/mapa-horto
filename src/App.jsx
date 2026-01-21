@@ -1,21 +1,16 @@
-import { useState } from 'react'
-import React from 'react' 
-import Mapa from './componentes/Mapa'
-
+import Mobile from "./pages/Mobile";
+import Principal from "./pages/Principal";
+import { Routes, Route } from "react-router-dom";
 import './App.css'
+import './index.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div className='card'>
-          
-          <Mapa />
-          
-      </div>
-    
-    </>
+    <Routes>
+      <Route path="/" element={<Principal />} />
+      <Route path="/mobile" element={<Mobile />} />
+    </Routes>
   )
 }
 
