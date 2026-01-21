@@ -1,5 +1,6 @@
 import Mapa from '../componentes/Mapa'
 import React, { useState, useEffect } from 'react'
+import '../../styles/mobile.css'
 
 
 function Mobile() {
@@ -7,31 +8,6 @@ function Mobile() {
   const [error, setError] = useState(null);
   const [position, setPosition] = useState(null);
 
-  useEffect(() => {
-    const lockLandscape = async () => {
-      try {
-        if (document.documentElement.requestFullscreen) {
-          await document.documentElement.requestFullscreen();
-          // Trava em landscape (pode ser 'landscape-primary' ou 'landscape-secondary')
-          await screen.orientation.lock('landscape');
-        }
-      } catch (err) {
-        console.error("A orientação não pôde ser travada:", err);
-      }
-    };
-
-    lockLandscape();
-
-    // Cleanup: Quando sair da tela, volta ao normal
-    return () => {
-      if (screen.orientation.unlock) {
-        screen.orientation.unlock();
-      }
-      if (document.exitFullscreen && document.fullscreenElement) {
-        document.exitFullscreen();
-      }
-    };
-  }, []);
 
   useEffect(() => {
     // Verifica se o navegador suporta geolocalização
