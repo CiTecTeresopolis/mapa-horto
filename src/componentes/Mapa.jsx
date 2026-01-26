@@ -187,7 +187,8 @@ export default function ImagemClicavel() {
                   &times;
                 </span>
                 <p className="retro-text">{popupInfo.titulo}</p>
-              </div>,
+              </div>
+              <br/>
               <iframe width="420" height="315"
                 src="https://www.youtube.com/embed/2PuFyjAs7JA">
               </iframe>
