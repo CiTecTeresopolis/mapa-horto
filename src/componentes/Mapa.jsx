@@ -139,6 +139,22 @@ export default function ImagemClicavel() {
           "polygon(90% 30%, 80% 47%, 73% 55%, 63% 66%, 51% 77%, 36% 88%, 20% 96%, 0px 100%, 0px 0px, 100% 0px, 100% 9%, 96% 18%)",
       },
     },
+    {
+      id: "temperos",
+      info: {
+        titulo: "Informações sobre o Canteiro de Temperos",
+        descricao: "Detalhes adicionais sobre o Canteiro de Temperos e Ervas",
+      },
+      style: {
+        top: "0%",
+        left: "42.5%",
+        width: "19%",
+        height: "34%",
+        // backgroundColor: "rgba(255, 0, 0, 0.3)",
+         clipPath:
+          "polygon(0 0, 58% 0, 64% 0, 100% 100%, 0 100%, 0% 50%)",
+      },
+    },
   ];
 
   const openPopup = (info) => {
@@ -171,7 +187,10 @@ export default function ImagemClicavel() {
                   &times;
                 </span>
                 <p className="retro-text">{popupInfo.titulo}</p>
-              </div>
+              </div>,
+              <iframe width="420" height="315"
+                src="https://www.youtube.com/watch?v=2PuFyjAs7JA">
+              </iframe>
               <p className="popup-info">{popupInfo.descricao}</p>
             </div>
             <div className="popup-overlay" onClick={closePopup}></div>
