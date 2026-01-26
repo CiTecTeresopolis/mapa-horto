@@ -23,7 +23,7 @@
 .hotspot {
   position: absolute;
   border: none;
-  /* background: rgba(255, 0, 0, 0.3); */
+  background: rgba(255, 0, 0, 0.0);
   cursor: pointer;
 }
 
