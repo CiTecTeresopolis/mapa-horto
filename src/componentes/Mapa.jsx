@@ -18,7 +18,7 @@ export default function ImagemClicavel() {
         width: "14%",
         height: "35%",
         transform: "rotate(-32deg)",
-        backgroundColor: "rgba(255, 0, 0, 0.3)",
+        // backgroundColor: "rgba(255, 0, 0, 0.3)",
         clipPath:
           "polygon(0 60%, 11% 42%, 11% 7%, 85% 0%, 100% 0, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0 84%)",
       },
@@ -34,7 +34,7 @@ export default function ImagemClicavel() {
         left: "41%",
         width: "4%",
         height: "35%",
-        backgroundColor: "rgba(255, 0, 0, 0.3)",
+        // backgroundColor: "rgba(255, 0, 0, 0.3)",
         clipPath:
           "polygon(10px 69%, 10px 40%, 10px 0px, 80% 0px, 80% 60%, 100% 60%, 100% 100%, 100% 100%, 49% 100%, 60% 100%, 60% 70%, 0% 70%)",
       },
@@ -50,7 +50,7 @@ export default function ImagemClicavel() {
         left: "21.5%",
         width: "18%",
         height: "34%",
-        backgroundColor: "rgba(255, 0, 0, 0.3)",
+        // backgroundColor: "rgba(255, 0, 0, 0.3)",
       },
     },
     {
@@ -92,7 +92,7 @@ export default function ImagemClicavel() {
         left: "11.5%",
         width: "10%",
         height: "34%",
-        backgroundColor: "rgba(0, 192, 250, 0.3)",
+        // backgroundColor: "rgba(0, 192, 250, 0.3)",
       },
     },
     {
@@ -106,7 +106,7 @@ export default function ImagemClicavel() {
         left: "16.5%",
         width: "24.5%",
         height: "22%",
-        backgroundColor: "rgba(0, 192, 250, 0.3)",
+        // backgroundColor: "rgba(0, 192, 250, 0.3)",
       },
     },
     {
@@ -120,7 +120,7 @@ export default function ImagemClicavel() {
         left: "39.5%",
         width: "3%",
         height: "34%",
-        backgroundColor: "rgba(0, 192, 250, 0.3)",
+        // backgroundColor: "rgba(0, 192, 250, 0.3)",
       },
     },
     {
@@ -134,7 +134,7 @@ export default function ImagemClicavel() {
         left: "42.5%",
         width: "19%",
         height: "34%",
-        backgroundColor: "rgba(255, 0, 0, 0.3)",
+        // backgroundColor: "rgba(255, 0, 0, 0.3)",
          clipPath:
           "polygon(90% 30%, 80% 47%, 73% 55%, 63% 66%, 51% 77%, 36% 88%, 20% 96%, 0px 100%, 0px 0px, 100% 0px, 100% 9%, 96% 18%)",
       },
