@@ -3,6 +3,8 @@ import Mapa from '../componentes/Mapa'
 
 function Principal() {
 
+  
+
   return (
     <>
     <div className='card'>
