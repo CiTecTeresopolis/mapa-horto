@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import mapaImage from "../assets/mapa.jpg";
 import "./Mapa.css";
 
 export default function ImagemClicavel() {
   const [popupInfo, setPopupInfo] = useState(null);
 
-  const hotspots = [
+    const hotspots = [
     {
       id: "area1",
       info: {
@@ -135,7 +135,7 @@ export default function ImagemClicavel() {
         width: "19%",
         height: "34%",
         // backgroundColor: "rgba(255, 0, 0, 0.3)",
-         clipPath:
+        clipPath:
           "polygon(90% 30%, 80% 47%, 73% 55%, 63% 66%, 51% 77%, 36% 88%, 20% 96%, 0px 100%, 0px 0px, 100% 0px, 100% 9%, 96% 18%)",
       },
     },
@@ -146,58 +146,55 @@ export default function ImagemClicavel() {
         descricao: "Detalhes adicionais sobre o Canteiro de Temperos e Ervas",
       },
       style: {
-        top: "0%",
-        left: "42.5%",
-        width: "19%",
-        height: "34%",
-        // backgroundColor: "rgba(255, 0, 0, 0.3)",
-         clipPath:
-          "polygon(0 0, 58% 0, 64% 0, 100% 100%, 0 100%, 0% 50%)",
+        top: "47%",
+        width: "17%",
+        height: "14%",
+        left: "44.5%",
+        clipPath: "polygon(0 0, 58% 0, 74% 0, 100% 100%, 0 100%, 0% 50%)",
       },
     },
   ];
 
-  const openPopup = (info) => {
-    setPopupInfo(info);
-  };
-
-  const closePopup = () => {
-    setPopupInfo(null);
-  };
-
   return (
     <div className="todo_cont">
       <div className="image-container">
-        <img src={mapaImage} alt="Mapa" />
+        <img src={mapaImage} alt="Mapa" className="mapa-img" />
 
         {hotspots.map(({ id, info, style }) => (
           <button
             key={id}
             className="hotspot"
             style={style}
-            onClick={() => openPopup(info)}
+            onClick={() => setPopupInfo(info)}
           />
         ))}
-
-        {popupInfo && (
-          <div className="popup">
-            <div className="popup-content">
-              <div className="popup-title">
-                <span className="close" onClick={closePopup}>
-                  &times;
-                </span>
-                <p className="retro-text">{popupInfo.titulo}</p>
-              </div>
-              <br/>
-              <iframe width="420" height="315"
-                src="https://www.youtube.com/embed/2PuFyjAs7JA">
-              </iframe>
-              <p className="popup-info">{popupInfo.descricao}</p>
-            </div>
-            <div className="popup-overlay" onClick={closePopup}></div>
-          </div>
-        )}
       </div>
+
+      {/* Popup movido para fora do image-container para evitar bugs de z-index e rotação */}
+      {popupInfo && (
+        <div className="popup-wrapper">
+          <div className="popup-overlay" onClick={() => setPopupInfo(null)}></div>
+          <div className="popup-content">
+            <div className="popup-header">
+              <h2 className="retro-text">{popupInfo.titulo}</h2>
+              <span className="close-icon" onClick={() => setPopupInfo(null)}>&times;</span>
+            </div>
+            
+            <div className="video-container">
+              <iframe 
+                src="https://www.youtube.com/embed/2PuFyjAs7JA" 
+                title="Video"
+                frameBorder="0" 
+                allowFullScreen
+              ></iframe>
+            </div>
+            
+            <div className="popup-body">
+              <p>{popupInfo.descricao}</p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
