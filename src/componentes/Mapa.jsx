@@ -26,8 +26,8 @@ export default function ImagemClicavel() {
     {
       id: "area2",
       info: {
-        titulo: "Informações da Área 2",
-        descricao: "Detalhes adicionais sobre a Área 2",
+        titulo: "Informações da Pista de Caminhada",
+        descricao: "Detalhes adicionais sobre a Pista de Caminhada",
       },
       style: {
         top: "40%",
@@ -69,8 +69,8 @@ export default function ImagemClicavel() {
     {
       id: "area5",
       info: {
-        titulo: "Informações da Área 5",
-        descricao: "Detalhes adicionais sobre a Área 5",
+        titulo: "Informações da Pista de Caminhada",
+        descricao: "Detalhes adicionais sobre a Pista de Caminhada",
       },
       style: {
         top: "70%",
