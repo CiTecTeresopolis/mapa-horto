@@ -1,46 +1,28 @@
 /* mobile.css */
 @media (max-width: 768px) {
-  body {
-    overflow: hidden; /* Impede o scroll da página principal no mobile */
-  }
-
-  /* Rotaciona o app inteiro para o modo paisagem */
   .todo_cont {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 100vh; /* A largura vira a altura da tela */
-    height: 100vw; /* A altura vira a largura da tela */
-    transform: translate(-50%, -50%) rotate(90deg);
-    transform-origin: center;
-    background-color: #242424;
+    overflow: hidden;
+    /* background-color: #242424; */
   }
 
+  /* Rotaciona apenas o mapa para preencher a tela na vertical como se fosse landscape */
   .image-container {
-    width: 95%; /* Ajuste fino para o mapa não bater nas bordas */
+    transform: rotate(90deg);
+    width: 180vh; /* Usa a altura da viewport como largura */
+    max-width: none;
   }
 
-  /* O Modal agora também está rotacionado porque é filho de .todo_cont */
   .popup-content {
-    width: 80%; /* No modo paisagem, ocupamos menos largura */
-    max-height: 85%;
-    padding: 15px;
-  }
-
-  /* Ajuste para o Iframe de vídeo não estourar */
-  .popup-content iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    border-radius: 8px;
+    width: 95%;
+    max-height: 80vh;
   }
 
   .retro-text {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 
-  .popup-info {
-    font-size: 12px;
-    margin-top: 10px;
+  .popup-body {
+    font-size: 14px;
+    padding: 15px;
   }
 }

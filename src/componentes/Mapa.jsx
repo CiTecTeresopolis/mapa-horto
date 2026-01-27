@@ -147,48 +147,54 @@ export default function ImagemClicavel() {
       },
       style: {
         top: "47%",
+        left: "44.5%",
         width: "17%",
         height: "14%",
-        left: "44.5%",
         clipPath: "polygon(0 0, 58% 0, 74% 0, 100% 100%, 0 100%, 0% 50%)",
       },
     },
   ];
-return (
-  <div className="todo_cont">
-    <div className="image-container">
-      <img src={mapaImage} alt="Mapa" />
 
-      {hotspots.map(({ id, info, style }) => (
-        <button
-          key={id}
-          className="hotspot"
-          style={style}
-          onClick={() => setPopupInfo(info)}
-        />
-      ))}
-    </div>
+  return (
+    <div className="todo_cont">
+      <div className="image-container">
+        <img src={mapaImage} alt="Mapa" className="mapa-img" />
 
-    {/* O Modal permanece dentro do todo_cont para acompanhar a rotação */}
-    {popupInfo && (
-      <div className="popup">
-        <div className="popup-overlay" onClick={() => setPopupInfo(null)}></div>
-        <div className="popup-content">
-          <div className="popup-title">
-            <span className="close" onClick={() => setPopupInfo(null)}>&times;</span>
-            <p className="retro-text">{popupInfo.titulo}</p>
-          </div>
-          
-          <iframe 
-            src="https://www.youtube.com/embed/2PuFyjAs7JA"
-            title="Vídeo do Local"
-            allowFullScreen
-          ></iframe>
-          
-          <p className="popup-info">{popupInfo.descricao}</p>
-        </div>
+        {hotspots.map(({ id, info, style }) => (
+          <button
+            key={id}
+            className="hotspot"
+            style={style}
+            onClick={() => setPopupInfo(info)}
+          />
+        ))}
       </div>
-    )}
-  </div>
-);
+
+      {/* Popup movido para fora do image-container para evitar bugs de z-index e rotação */}
+      {popupInfo && (
+        <div className="popup-wrapper">
+          <div className="popup-overlay" onClick={() => setPopupInfo(null)}></div>
+          <div className="popup-content">
+            <div className="popup-header">
+              <h2 className="retro-text">{popupInfo.titulo}</h2>
+              <span className="close-icon" onClick={() => setPopupInfo(null)}>&times;</span>
+            </div>
+            
+            <div className="video-container">
+              <iframe 
+                src="https://www.youtube.com/embed/2PuFyjAs7JA" 
+                title="Video"
+                frameBorder="0" 
+                allowFullScreen
+              ></iframe>
+            </div>
+            
+            <div className="popup-body">
+              <p>{popupInfo.descricao}</p>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
