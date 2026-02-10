@@ -5,12 +5,28 @@ import "./Mapa.css";
 export default function ImagemClicavel() {
   const [popupInfo, setPopupInfo] = useState(null);
 
-    const hotspots = [
+  const hotspots = [
     {
       id: "area1",
       info: {
-        titulo: "Informações da Área 1",
-        descricao: "Detalhes adicionais sobre a Área 1",
+        titulo: "Casa administrativa",
+        descricao: (
+          <p style={{ textAlign: "left" }}>
+            Neste espaço encontra-se a equipe do Horto e Borboletário, com a
+            recepção dos visitantes ocorrendo logo na sua entrada, além da
+            administração e gestão interna.{" "}
+            <strong>
+              Os visitantes podem acessar e utilizar o banheiro neste espaço.
+            </strong>
+            <br /> <br />
+            Além de um prédio administrativo, este também é um espaço voltado e
+            pensado para a educação ambiental. O Centro Municipal de Educação
+            Ambiental comporta a sala de administração da equipe da Educação
+            Ambiental, além de uma sala multimídia na qual são passados vídeos
+            informativos sobre o Horto e o Borboletário para os visitantes, além
+            de turmas de escolas públicas e particulares.
+          </p>
+        ),
       },
       style: {
         top: "23%",
@@ -26,8 +42,24 @@ export default function ImagemClicavel() {
     {
       id: "area2",
       info: {
-        titulo: "Informações da Pista de Caminhada",
-        descricao: "Detalhes adicionais sobre a Pista de Caminhada",
+        titulo: "Pista de caminhada Raphael Marques de Andrade",
+        descricao: (
+          <p style={{ textAlign: "left" }}>
+            Esta pista de caminhada de 327 metros foi pensada de forma a
+            aproveitar um espaço antes não utilizado do Horto e sem acesso dos
+            visitantes, principalmente após o rio. Com esta área revitalizada,
+            com o plantio de mudas de árvores nativas e frutíferas e uma pista
+            de caminhada com acessibilidade, agora este espaço recebe um novo
+            propósito.
+            <br /> <br />O espaço recebeu esse nome em homenagem a{" "}
+            <strong>Raphael Marques de Andrade</strong>, jovem que deixou uma
+            lembrança marcada pela alegria, pelo amor à natureza e pelo gosto em
+            frequentar parques e áreas verdes da cidade. Sua história inspirou a
+            concepção de uma pista pensada para ser acessível, permitindo que
+            pessoas com diferentes tipos de deficiências físicas possam usufruir
+            do local com conforto, inclusão e dignidade.
+          </p>
+        ),
       },
       style: {
         top: "40%",
@@ -42,8 +74,25 @@ export default function ImagemClicavel() {
     {
       id: "area3",
       info: {
-        titulo: "Informações da Área 3",
-        descricao: "Detalhes adicionais sobre a Área 3",
+        titulo: "Borboletário Municipal de Teresópolis",
+        descricao: (
+          <p>
+            O borboletário municipal de Teresópolis é um dos poucos no estado do
+            Rio de Janeiro e o único da região serrana. Administrado pela
+            Secretaria Municipal de Meio Ambiente, foi licenciado e inaugurado
+            em 2025 através do <strong>projeto Teresópolis Sustentável</strong>{" "}
+            com a proposta de trazer para a população a beleza e importância das
+            borboletas através da educação ambiental e do ecoturismo.
+            <br />
+            <br />
+            Além da visitação turística normal, há também a visita de escolas
+            públicas e particulares com passeios guiados e voltados para
+            compreensão destes animais e de sua importância para o meio
+            ambiente. Biólogas e equipe treinada estão à postos para sanar todas
+            as dúvidas dos visitantes com relação à borboletas, mariposas e
+            outros insetos!
+          </p>
+        ),
       },
       style: {
         top: "0%",
@@ -56,8 +105,21 @@ export default function ImagemClicavel() {
     {
       id: "area4",
       info: {
-        titulo: "Informações da Área 4",
-        descricao: "Detalhes adicionais sobre a Área 4",
+        titulo: "Cafeteria",
+        descricao: (
+          <p style={{ textAlign: "left" }}>
+            A cafeteria do Horto é um espaço pensado para acolher os visitantes
+            em meio à natureza, oferecendo alimentos e bebidas para quem deseja
+            fazer uma pausa durante o passeio. Integrada ao ambiente verde, ela{" "}
+            <strong>
+              proporciona um local tranquilo para descansar, se alimentar e
+              apreciar o entorno
+            </strong>
+            , atendendo às necessidades de quem passa o dia por aqui,
+            especialmente por não haver outros pontos de venda de alimentos nas
+            proximidades.
+          </p>
+        ),
       },
       style: {
         top: "44%",
@@ -69,8 +131,28 @@ export default function ImagemClicavel() {
     {
       id: "area5",
       info: {
-        titulo: "Informações da Pista de Caminhada",
-        descricao: "Detalhes adicionais sobre a Pista de Caminhada",
+        titulo: "Berçário de Mudas (Acesso Restrito)",
+        descricao: (
+          <p>
+            O berçário de mudas é o espaço dedicado à{" "}
+            <strong>
+              produção e ao desenvolvimento das plantas ornamentais
+            </strong>{" "}
+            utilizadas no Horto Municipal, no Borboletário e nos canteiros
+            distribuídos por toda a cidade de Teresópolis. Nesse local, a equipe
+            de jardinagem realiza o cultivo cuidadoso das mudas, desde as fases
+            iniciais de crescimento até o momento em que estão prontas para o
+            plantio definitivo. Além de contribuir para o embelezamento dos
+            espaços públicos, essas plantas desempenham um papel importante no
+            equilíbrio ambiental, atraindo insetos polinizadores e aves nativas,
+            fortalecendo a biodiversidade e trazendo mais vida, cor e qualidade
+            ambiental para a cidade.
+            <br />
+            <br />
+            *Estas mudas são para uso exclusivo da prefeitura e não estão
+            disponíveis para venda ou doação aos visitantes.
+          </p>
+        ),
       },
       style: {
         top: "70%",
@@ -173,24 +255,28 @@ export default function ImagemClicavel() {
       {/* Popup movido para fora do image-container para evitar bugs de z-index e rotação */}
       {popupInfo && (
         <div className="popup-wrapper">
-          <div className="popup-overlay" onClick={() => setPopupInfo(null)}></div>
+          <div
+            className="popup-overlay"
+            onClick={() => setPopupInfo(null)}
+          ></div>
           <div className="popup-content">
             <div className="popup-header">
               <h2 className="retro-text">{popupInfo.titulo}</h2>
-              <span className="close-icon" onClick={() => setPopupInfo(null)}>&times;</span>
+              <span className="close-icon" onClick={() => setPopupInfo(null)}>
+                &times;
+              </span>
             </div>
-            
-            <div className="video-container">
-              <iframe 
-                src="https://www.youtube.com/embed/2PuFyjAs7JA" 
-                title="Video"
-                frameBorder="0" 
-                allowFullScreen
-              ></iframe>
-            </div>
-            
-            <div className="popup-body">
-              <p>{popupInfo.descricao}</p>
+            <div className="content">
+              <div className="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/2PuFyjAs7JA"
+                  title="Video"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              <div className="popup-body">{popupInfo.descricao}</div>
             </div>
           </div>
         </div>
