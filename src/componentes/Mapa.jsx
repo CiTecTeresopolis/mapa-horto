@@ -1,15 +1,33 @@
 import { useState } from "react";
-import mapaImage from "../assets/mapa.jpg";
+import mapaImage from "../assets/mapa.png";
 import "./Mapa.css";
 
 export default function ImagemClicavel() {
   const [popupInfo, setPopupInfo] = useState(null);
 
   const hotspots = [
+        {
+      id: "area0",
+      info: {
+        titulo: "",
+        video: "",
+        descricao: "",
+      },
+      style: {
+        top: "0%",
+        left: "0%",
+        width: "100%",
+        height: "11%",
+        // backgroundColor: "rgba(255, 0, 0, 0.3)",
+        clipPath:
+          "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+      },
+    },
     {
       id: "area1",
       info: {
         titulo: "Casa administrativa",
+        video: "videos/casa.mp4",
         descricao: (
           <p style={{ textAlign: "left" }}>
             Neste espaço encontra-se a equipe do Horto e Borboletário, com a
@@ -33,7 +51,7 @@ export default function ImagemClicavel() {
         left: "56%",
         width: "14%",
         height: "35%",
-        transform: "rotate(-32deg)",
+        transform: "rotate(-45deg)",
         // backgroundColor: "rgba(255, 0, 0, 0.3)",
         clipPath:
           "polygon(0 60%, 11% 42%, 11% 7%, 85% 0%, 100% 0, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0 84%)",
@@ -43,6 +61,7 @@ export default function ImagemClicavel() {
       id: "area2",
       info: {
         titulo: "Pista de caminhada Raphael Marques de Andrade",
+        video: "videos/pista.mp4",
         descricao: (
           <p style={{ textAlign: "left" }}>
             Esta pista de caminhada de 327 metros foi pensada de forma a
@@ -75,6 +94,7 @@ export default function ImagemClicavel() {
       id: "area3",
       info: {
         titulo: "Borboletário Municipal de Teresópolis",
+        video: "videos/borboletario.mp4",
         descricao: (
           <p>
             O borboletário municipal de Teresópolis é um dos poucos no estado do
@@ -106,6 +126,7 @@ export default function ImagemClicavel() {
       id: "area4",
       info: {
         titulo: "Cafeteria",
+        video: "videos/cafe.mp4",
         descricao: (
           <p style={{ textAlign: "left" }}>
             A cafeteria do Horto é um espaço pensado para acolher os visitantes
@@ -132,6 +153,7 @@ export default function ImagemClicavel() {
       id: "area5",
       info: {
         titulo: "Berçário de Mudas (Acesso Restrito)",
+        video: "videos/mudas.mp4",
         descricao: (
           <p>
             O berçário de mudas é o espaço dedicado à{" "}
@@ -167,6 +189,7 @@ export default function ImagemClicavel() {
       id: "piquenique",
       info: {
         titulo: "Área de Piquenique",
+        video: "videos/2.mp4",
         descricao: "Detalhes adicionais sobre a Área de Piquenique",
       },
       style: {
@@ -181,6 +204,7 @@ export default function ImagemClicavel() {
       id: "canteiro",
       info: {
         titulo: "Informações sobre o Canteiro",
+        video: "videos/8.mp4",
         descricao: "Detalhes adicionais sobre o Canteiro",
       },
       style: {
@@ -195,6 +219,7 @@ export default function ImagemClicavel() {
       id: "canteiro2",
       info: {
         titulo: "Informações sobre o Canteiro",
+        video: "videos/2.mp4",
         descricao: "Detalhes adicionais sobre o Canteiro",
       },
       style: {
@@ -209,6 +234,7 @@ export default function ImagemClicavel() {
       id: "parquinho",
       info: {
         titulo: "Informações sobre o Parquinho",
+        video: "videos/parque.mp4",
         descricao: "Detalhes adicionais sobre o Parquinho",
       },
       style: {
@@ -224,7 +250,8 @@ export default function ImagemClicavel() {
     {
       id: "temperos",
       info: {
-        titulo: "Informações sobre o Canteiro de Temperos",
+        titulo: "Canteiro de Temperos",
+        video: "videos/7.mp4",
         descricao: "Detalhes adicionais sobre o Canteiro de Temperos e Ervas",
       },
       style: {
@@ -247,7 +274,7 @@ export default function ImagemClicavel() {
             key={id}
             className="hotspot"
             style={style}
-            onClick={() => setPopupInfo(info)}
+            onClick={() => id !== "area0" && setPopupInfo(info)}
           />
         ))}
       </div>
@@ -261,22 +288,19 @@ export default function ImagemClicavel() {
           ></div>
           <div className="popup-content">
             <div className="popup-header">
-              <h2 className="retro-text">{popupInfo.titulo}</h2>
+              {/* <h2 className="retro-text">{popupInfo.titulo}</h2> */}
               <span className="close-icon" onClick={() => setPopupInfo(null)}>
                 &times;
               </span>
             </div>
             <div className="content">
-              <div className="video-container">
+            
                 <iframe
-                  src="https://www.youtube.com/embed/2PuFyjAs7JA"
+                  src={popupInfo.video}
                   title="Video"
                   frameBorder="0"
                   allowFullScreen
                 ></iframe>
-              </div>
-
-              <div className="popup-body">{popupInfo.descricao}</div>
             </div>
           </div>
         </div>

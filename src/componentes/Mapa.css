@@ -46,7 +46,7 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .popup-overlay {
@@ -59,15 +59,14 @@
 
 .popup-content {
   position: relative;
-  width: 100%;
-  max-width: 1400px;
-  max-height: 90vh;
-  background: #c99273;
-  border: 6px solid #987762;
-  border-radius: 12px;
+  max-width: 900px;
+  max-height: 100vh;
   display: flex;
-  flex-direction: column;
   overflow: hidden; /* Garante que o header e video fiquem presos */
+  border-radius: 12px;
+  background: #c99273;
+  flex-direction: column;
+  border: 6px solid #987762;
   animation: modalShow 0.3s ease-out;
 }
 
@@ -98,28 +97,10 @@
   line-height: 1;
 }
 
-.video-container {
-  height: 0;
-  background: #000;
-  height: 800px;
-}
 
-.video-container iframe {
+iframe {
   top: 0;
   left: 0;
-  width: 850px;
-  height: 750px;
-}
-
-.popup-body {
-  padding: 20px;
-  overflow-y: auto;
-  color: #2c1b10;
-  font-family: "Courier New", monospace;
-  font-weight: bold;
-}
-
-.content {
-  display: flex;
-  /* background-color: aqua; */
+  width: 464px;
+  height: 832px;
 }
