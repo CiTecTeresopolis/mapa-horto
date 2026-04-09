@@ -1,12 +1,23 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  --primary: #2e7d32;
+  --primary-light: #4caf50;
+  --primary-dark: #1b5e20;
+  --secondary: #81c784;
+  --accent: #ffb300;
+  --bg-color: #f1f8e9;
+  --text-primary: #1b5e20;
+  --text-secondary: #33691e;
+  --surface: rgba(255, 255, 255, 0.85);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color: var(--text-primary);
+  background-color: var(--bg-color);
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,8 +25,13 @@
 }
 
 * {
-  font-family: "Press Start 2P", cursive;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  color: var(--primary-dark);
 }
 
 body {
@@ -23,5 +39,6 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  background-color: darkgreen;
+  background: radial-gradient(circle at top left, #f1f8e9, #dcedc8);
 }
+
