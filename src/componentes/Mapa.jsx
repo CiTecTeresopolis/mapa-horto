@@ -43,10 +43,6 @@ export default function ImagemClicavel() {
         video: "videos/casa.mp4",
         descricao: (
           <p>
-            {/* Neste espaço encontra-se a equipe do Horto e Borboletário, com a recepção dos visitantes ocorrendo logo na sua entrada.
-            <strong> Os visitantes podem acessar e utilizar o banheiro neste espaço.</strong>
-            <br /> <br /> */}
-            {/* Este também é um espaço voltado para a educação ambiental, com uma sala multimídia para vídeos informativos. */}
             Seja bem-vindo ao coração operacional do{" "}
             <strong>Horto e Borboletário</strong>. É aqui, logo no pórtico de
             entrada, que nossa equipe recebe cada visitante, oferecendo as
@@ -74,27 +70,6 @@ export default function ImagemClicavel() {
           "polygon(30.97% 63.57%, 30.97% 63.57%, 32.25% 0%, 85% 0%, 100% 0%, 100% 15%, 100% 69.5%, 93.25% 100%, 85% 100%, 21.25% 86%, 21.25% 86%)",
       },
     },
-    // {
-    //   id: "area2",
-    //   info: {
-    //     titulo: "Pista de Caminhada",
-    //     video: "videos/pista.mp4",
-    //     descricao: (
-    //       <p>
-    //         Esta pista de caminhada de 327 metros foi pensada de forma a aproveitar um espaço vital do Horto.
-    //         Revitalizada com mudas nativas, é um local perfeito para exercícios e contato com o ar puro.
-    //       </p>
-    //     ),
-    //   },
-    //   style: {
-    //     top: "40%",
-    //     left: "41%",
-    //     width: "4%",
-    //     height: "35%",
-    //     backgroundColor: "rgba(175, 16, 16, 0.47)",
-    //     clipPath: "polygon(10px 69%, 10px 40%, 10px 0px, 80% 0px, 80% 60%, 100% 60%, 100% 100%, 100% 100%, 49% 100%, 60% 100%, 60% 70%, 0% 70%)",
-    //   },
-    // },
     {
       id: "area3",
       info: {
@@ -102,13 +77,14 @@ export default function ImagemClicavel() {
         video: "videos/borboletario.mp4",
         descricao: (
           <p>
-            O <strong>Borboletário Municipal de Teresópolis</strong> é um dos poucos no estado do
-            Rio de Janeiro. Um espaço mágico para aprender sobre a importância
-            das borboletas no ecossistema através da <strong>educação ambiental</strong>,
-            funcionando como um verdadeiro <strong>museu vivo</strong>. Aqui, você pode observar
-            de perto o ciclo completo da metamorfose,do ovo à fase adulta, e
-            entender como esses insetos atuam como polinizadores essenciais e
-            bioindicadores da saúde da nossa Mata Atlântica.
+            O <strong>Borboletário Municipal de Teresópolis</strong> é um dos
+            poucos no estado do Rio de Janeiro. Um espaço mágico para aprender
+            sobre a importância das borboletas no ecossistema através da{" "}
+            <strong>educação ambiental</strong>, funcionando como um verdadeiro{" "}
+            <strong>museu vivo</strong>. Aqui, você pode observar de perto o
+            ciclo completo da metamorfose,do ovo à fase adulta, e entender como
+            esses insetos atuam como polinizadores essenciais e bioindicadores
+            da saúde da nossa Mata Atlântica.
           </p>
         ),
       },
@@ -165,7 +141,7 @@ export default function ImagemClicavel() {
       id: "area6",
       info: {
         titulo: "Jardim Sensorial",
-        video: "videos/7.mp4",
+        video: "",
         descricao: (
           <p>
             O Jardim Sensorial permite uma experiência tátil e olfativa única
@@ -206,11 +182,11 @@ export default function ImagemClicavel() {
       id: "area7",
       info: {
         titulo: "Canteiro",
-        video: "videos/canteiro.mp4",
+        video: "",
         descricao: (
           <p>
-            O canteiro do Horto é um espaço dedicado à cultivo e exposição de
-            plantas ornamentais.
+            Os canteiros do Horto são espaços dedicados ao cultivo e exposição
+            de plantas ornamentais.
           </p>
         ),
       },
@@ -225,11 +201,11 @@ export default function ImagemClicavel() {
       id: "area8",
       info: {
         titulo: "Canteiro",
-        video: "videos/canteiro.mp4",
+        video: "",
         descricao: (
           <p>
-            O canteiro do Horto é um espaço dedicado à cultivo e exposição de
-            plantas ornamentais.
+            Os canteiros do Horto são espaços dedicados ao cultivo e exposição
+            de plantas ornamentais.
           </p>
         ),
       },
@@ -238,6 +214,112 @@ export default function ImagemClicavel() {
         left: "39.5%",
         width: "3%",
         height: "27%",
+      },
+    },
+    {
+      id: "area9",
+      info: {
+        titulo: "Pista de Caminhada",
+        video: "videos/pista.mp4",
+        descricao: (
+          <p>
+            Esta pista de caminhada de 327 metros foi pensada de forma a
+            aproveitar um espaço vital do Horto. Revitalizada com mudas nativas,
+            é um local perfeito para exercícios e contato com o ar puro.
+          </p>
+        ),
+      },
+      style: {
+        top: "40%",
+        left: "43%",
+        width: "4%",
+        height: "35%",
+        clipPath:
+          "polygon(10px 70%, 10px 70%, 10px 20px, 60% 20px, 60% 60%, 100% 55%, 100% 100%, 100% 100%, 10% 100%, 50% 100%, 50% 70%, 0% 71%)",
+      },
+    },
+    {
+      id: "area10",
+      info: {
+        titulo: "Pista de Caminhada",
+        video: "videos/pista.mp4",
+        descricao: (
+          <p>
+            Esta pista de caminhada de 327 metros foi pensada de forma a
+            aproveitar um espaço vital do Horto. Revitalizada com mudas nativas,
+            é um local perfeito para exercícios e contato com o ar puro.
+          </p>
+        ),
+      },
+      style: {
+        top: "70%",
+        left: "45.5%",
+        width: "2%",
+        height: "22%",
+        clipPath:"inset(5% 20% 15% 10%);",
+      },
+    },
+    {
+      id: "area11",
+      info: {
+        titulo: "Pista de Caminhada",
+        video: "videos/pista.mp4",
+        descricao: (
+          <p>
+            Esta pista de caminhada de 327 metros foi pensada de forma a
+            aproveitar um espaço vital do Horto. Revitalizada com mudas nativas,
+            é um local perfeito para exercícios e contato com o ar puro.
+          </p>
+        ),
+      },
+      style: {
+        top: "88%",
+        left: "30.5%",
+        width: "17%",
+        height: "5%",
+        clipPath:"inset(68% 0 0 0);",
+      },
+    },
+    {
+      id: "area12",
+      info: {
+        titulo: "Pista de Caminhada",
+        video: "videos/pista.mp4",
+        descricao: (
+          <p>
+            Esta pista de caminhada de 327 metros foi pensada de forma a
+            aproveitar um espaço vital do Horto. Revitalizada com mudas nativas,
+            é um local perfeito para exercícios e contato com o ar puro.
+          </p>
+        ),
+      },
+      style: {
+        top: "81%",
+        left: "14%",
+        width: "17%",
+        height: "6%",
+        clipPath:"inset(68% 0 0 0);",
+      },
+    },
+    {
+      id: "area13",
+      info: {
+        titulo: "Pista de Caminhada",
+        video: "videos/pista.mp4",
+        descricao: (
+          <p>
+            Esta pista de caminhada de 327 metros foi pensada de forma a
+            aproveitar um espaço vital do Horto. Revitalizada com mudas nativas,
+            é um local perfeito para exercícios e contato com o ar puro.
+          </p>
+        ),
+      },
+      style: {
+        top: "81%",
+        left: "0%",
+        width: "15%",
+        height: "6%",
+        clipPath:"inset(68% 0 0 0);",
       },
     },
   ];
