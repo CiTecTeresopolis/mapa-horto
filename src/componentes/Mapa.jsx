@@ -132,8 +132,8 @@ export default function ImagemClicavel() {
         left: "48%",
         width: "12%",
         height: "23%",
-        clipPath:
-          "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",},
+        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+      },
     },
     {
       id: "area6",
@@ -254,7 +254,7 @@ export default function ImagemClicavel() {
         left: "45.5%",
         width: "2%",
         height: "22%",
-        clipPath:"inset(5% 20% 15% 10%);",
+        clipPath: "inset(5% 20% 15% 10%);",
       },
     },
     {
@@ -275,7 +275,7 @@ export default function ImagemClicavel() {
         left: "30.5%",
         width: "17%",
         height: "5%",
-        clipPath:"inset(68% 0 0 0);",
+        clipPath: "inset(68% 0 0 0);",
       },
     },
     {
@@ -296,7 +296,7 @@ export default function ImagemClicavel() {
         left: "14%",
         width: "17%",
         height: "6%",
-        clipPath:"inset(68% 0 0 0);",
+        clipPath: "inset(68% 0 0 0);",
       },
     },
     {
@@ -317,7 +317,40 @@ export default function ImagemClicavel() {
         left: "0%",
         width: "15%",
         height: "6%",
-        clipPath:"inset(68% 0 0 0);",
+        clipPath: "inset(68% 0 0 0);",
+      },
+    },
+    {
+      id: "area14",
+      info: {
+        titulo: "Rio Paquequer",
+        video: "",
+        descricao: (
+          <p>
+            O <strong>Rio Paquequer</strong> representa o principal eixo ambiental e geográfico
+            de Teresópolis, sendo considerado o verdadeiro <strong>coração hídrico</strong> do
+            município. Com suas nascentes protegidas pela exuberante vegetação
+            do <strong>Parque Nacional da Serra dos Órgãos</strong>, o rio desce as montanhas
+            para moldar a paisagem urbana, atravessando bairros emblemáticos e
+            alimentando cartões-postais como o  <strong>Lago Comary</strong>. Além de sua inegável
+            importância estética e turística, o curso d'água desempenha um papel
+            ecológico fundamental como afluente da bacia do <strong>Rio Paraíba do Sul</strong>,
+            sendo vital para o equilíbrio do ecossistema regional. Por cortar
+            áreas densamente povoadas, ele também se torna o ponto central para
+            o planejamento urbano e para as ações de defesa civil, simbolizando
+            o desafio constante de conciliar o desenvolvimento da cidade com a
+            preservação de seus recursos naturais mais preciosos.
+          </p>
+        ),
+      },
+      style: {
+        top: "70%",
+        left: "0%",
+        width: "60%",
+        height: "5%",
+        transform: "rotate(3deg)",
+        // backgroundColor: "rgba(255, 0, 0, 0.41)",
+        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
       },
     },
   ];
