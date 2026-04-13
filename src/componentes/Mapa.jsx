@@ -114,29 +114,27 @@ export default function ImagemClicavel() {
         height: "22%",
       },
     },
-    // {
-    //   id: "area5",
-    //   info: {
-    //     titulo: "Berçário de Mudas",
-    //     video: "videos/mudas.mp4",
-    //     descricao: (
-    //       <p>
-    //         Espaço dedicado à produção e desenvolvimento das plantas ornamentais
-    //         utilizadas em toda a cidade. *Acesso restrito para funcionários da
-    //         prefeitura.
-    //       </p>
-    //     ),
-    //   },
-    //   style: {
-    //     top: "70%",
-    //     left: "0%",
-    //     width: "62%",
-    //     height: "30%",
-    //     backgroundColor: "rgba(221, 10, 10, 0.41)",
-    //     clipPath:
-    //       "polygon(56% 25%, 70% 2%, 79% 0px, 93% 14%, 100% 11%, 100% 45%, 95% 100%, 0px 100%, 0px 20%, 18% 20%, 27% 29%, 45% 37%)",
-    //   },
-    // },
+    {
+      id: "area5",
+      info: {
+        titulo: "Berçário de Mudas",
+        video: "videos/mudas.mp4",
+        descricao: (
+          <p>
+            Espaço dedicado à produção e desenvolvimento das plantas ornamentais
+            utilizadas em toda a cidade. *Acesso restrito para funcionários da
+            prefeitura.
+          </p>
+        ),
+      },
+      style: {
+        top: "78%",
+        left: "48%",
+        width: "12%",
+        height: "23%",
+        clipPath:
+          "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",},
+    },
     {
       id: "area6",
       info: {
