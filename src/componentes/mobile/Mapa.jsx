@@ -1,5 +1,5 @@
 import { useState } from "react";
-import mapaImage from "../assets/mapa.png";
+import mapaImage from "../../assets/mapa.png";
 import "./Mapa.css";
 
 export default function ImagemClicavel() {
@@ -356,8 +356,8 @@ export default function ImagemClicavel() {
   ];
 
   return (
-    <div className="todo_cont">
-      <div className="image-container">
+    <div className="todo_cont_mobile">
+      <div className="image-container_mobile">
         <img src={mapaImage} alt="Mapa Horto" className="mapa-img" />
 
         {hotspots.map(({ id, info, style }) => (

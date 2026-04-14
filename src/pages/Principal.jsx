@@ -1,4 +1,4 @@
-import Mapa from '../componentes/Mapa'
+import Mapa from '../componentes/web/Mapa'
 
 
 function Principal() {

@@ -1,4 +1,4 @@
-import Mapa from "../componentes/Mapa";
+import Mapa from "../componentes/mobile/Mapa";
 // import React, { useState, useEffect } from "react";
 import "../../styles/mobile.css";
 
