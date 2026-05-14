@@ -8,7 +8,6 @@
 
   /* Rotaciona apenas o mapa para preencher a tela na vertical como se fosse landscape */
   .image-container {
-    transform: rotate(90deg);
     width: 200vh; /* Aumentado para cobrir melhor */
     max-width: none;
     border-radius: 0;

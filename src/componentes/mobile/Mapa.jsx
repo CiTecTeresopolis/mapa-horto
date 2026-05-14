@@ -1,6 +1,7 @@
-import { useState } from "react";
-import mapaImage from "../../assets/mapa.png";
 import "./Mapa.css";
+import { useState } from "react";
+import mapaImage from "../../assets/mapa-mobile.png";
+import mapaLegenda from "../../assets/legenda-mobile.png";
 
 export default function ImagemClicavel() {
   const [popupInfo, setPopupInfo] = useState(null);
@@ -28,7 +29,7 @@ export default function ImagemClicavel() {
             família, você está em um dos recantos mais queridos da nossa cidade. 
             Aproveite o ar puro e a beleza que nos cercam. 
           </p> // Obs: Mudei a última palavra de "cerca" para "cercam", pois achei que soaria mais harmonioso.  
-          ),
+        ),
         // descricao: (
         //   <p>
         //     A <strong>Avenida Tobias Barreto</strong> é um dos recantos mais
@@ -433,7 +434,7 @@ export default function ImagemClicavel() {
     {
       id: "area14",
       info: {
-        titulo: "Rio Caxangá", // "Rio Paquequer"
+        titulo: "Rio Caxangá",
         video: "",
         descricao: (
           <p>
@@ -478,8 +479,9 @@ export default function ImagemClicavel() {
   ];
 
   return (
-    <div className="todo_cont_mobile">
-      <div className="image-container_mobile">
+    <div className="todo_cont">
+      <div className="image-container">
+        <img src={mapaLegenda} alt="Legendas" className="mapa-img" />
         <img src={mapaImage} alt="Mapa Horto" className="mapa-img" />
 
         {hotspots.map(({ id, info, style }) => (
