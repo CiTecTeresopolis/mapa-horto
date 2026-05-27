@@ -231,13 +231,12 @@ export default function ImagemClicavel() {
         ),
       },
       style: {
-        top: "40%",
-        left: "65%",
-        width: "4%",
-        height: "35%",
-        backgroundColor: "rgba(0, 119, 255, 0.77)",
+        top: "41%",
+        left: "64%",
+        width: "5%",
+        height: "45%",
         clipPath:
-          "polygon(10px 70%, 10px 70%, 10px 20px, 60% 20px, 60% 60%, 100% 55%, 100% 100%, 100% 100%, 10% 100%, 50% 100%, 50% 70%, 0% 71%)",
+          "polygon(5% 0%, 70% 0%, 50% 40%, 215% 45%, 40% 100%, 50% 55%, 15% 55%);",
       },
     },
     {
@@ -254,10 +253,9 @@ export default function ImagemClicavel() {
       },
       style: {
         top: "70%",
-        left: "45.5%",
-        width: "2%",
+        left: "65%",
+        width: "1%",
         height: "22%",
-         backgroundColor: "rgba(255, 0, 0, 0.49)",
         clipPath: "inset(5% 20% 15% 10%);",
       },
     },
@@ -274,11 +272,10 @@ export default function ImagemClicavel() {
         ),
       },
       style: {
-        top: "88%",
+        top: "87%",
         left: "30.5%",
-        width: "17%",
+        width: "37%",
         height: "5%",
-         backgroundColor: "rgba(255, 0, 0, 0.49)",
         clipPath: "inset(68% 0 0 0);",
       },
     },
@@ -295,11 +292,10 @@ export default function ImagemClicavel() {
         ),
       },
       style: {
-        top: "81%",
+        top: "78%",
         left: "14%",
         width: "17%",
-        height: "6%",
-         backgroundColor: "rgba(255, 0, 0, 0.49)",
+        height: "10%",
         clipPath: "inset(68% 0 0 0);",
       },
     },
@@ -321,7 +317,6 @@ export default function ImagemClicavel() {
         left: "0%",
         width: "15%",
         height: "6%",
-         backgroundColor: "rgba(255, 0, 0, 0.49)",
         clipPath: "inset(68% 0 0 0);",
       },
     },
@@ -385,7 +380,7 @@ export default function ImagemClicavel() {
           ></div>
           <div className="popup-content">
             <div className="popup-header">
-              <h2>{popupInfo.titulo}</h2>
+              <h3>{popupInfo.titulo}</h3>
               <span className="close-icon" onClick={() => setPopupInfo(null)}>
                 &times;
               </span>
